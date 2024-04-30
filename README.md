@@ -54,7 +54,7 @@ Program for flipflops and verify its truth table in quartus using Verilog progra
 Developed by: P.KEERTHANA
 RegisterNumber: 212223240069
 
-module JKFLIPFLOPUSINGIFELSE(q, qb,j,k,clock,reset);
+module JKflipflop(q, qb,j,k,clock,reset);
     input j,k,clock,reset;
     output reg q, qb;
 	 
@@ -64,7 +64,7 @@ always @ (posedge (clock))
         if (!reset)
             begin
                q <= q;
-               qb <=qb;
+               qb <= ~q;
             end   
         
 else
@@ -75,7 +75,7 @@ begin
                if (j == 0 && k == 0)
                     begin
                     q <= q;
-                    qb <= qb;
+                    qb <= ~q;
                     end 
 		else if (j != k)
                     begin
@@ -97,12 +97,12 @@ endmodule
 
 **RTL LOGIC FOR FLIPFLOPS**
 
-![image](https://github.com/keerthanapillaram/JKFLIPFLOP-USING-IF-ELSE/assets/145743072/fcfcd4e2-43b9-4836-8862-9b7bcdbda0b0)
+![image](https://github.com/keerthanapillaram/JKFLIPFLOP-USING-IF-ELSE/assets/145743072/53336ac5-32b2-47b2-8e53-430be793045e)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
-![image](https://github.com/keerthanapillaram/JKFLIPFLOP-USING-IF-ELSE/assets/145743072/cd91df9a-da7a-4269-b810-87c8e8a016a0)
+![image](https://github.com/keerthanapillaram/JKFLIPFLOP-USING-IF-ELSE/assets/145743072/6ebb6ae9-2f06-4f62-b9e1-0f1e3481acbe)
 
 
 **RESULTS**
