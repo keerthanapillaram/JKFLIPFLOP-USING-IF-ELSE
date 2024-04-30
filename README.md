@@ -102,7 +102,7 @@ endmodule
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
-![image](https://github.com/keerthanapillaram/JKFLIPFLOP-USING-IF-ELSE/assets/145743072/41fdbae9-ee50-4f43-b1a8-d64b99fa8aaa)
+![image](https://github.com/keerthanapillaram/JKFLIPFLOP-USING-IF-ELSE/assets/145743072/cd91df9a-da7a-4269-b810-87c8e8a016a0)
 
 
 **RESULTS**
